@@ -33,7 +33,7 @@ def comment_eval(x, target_lang='en'):
 
     return lang, confidence, translation, compound, neutral_score, negative_score, positive_score
 
-if "__name__" = "__main__":
+if "__name__" == "__main__":
     parser = argparse.ArgumentParser(description = 'Process comments')
     parser._action_groups.pop()
     required = parser.add_argument_group('required arguments')
