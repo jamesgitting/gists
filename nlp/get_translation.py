@@ -11,6 +11,12 @@ def main(opt):
 
 
 def comment_eval(x, target_lang='en'):
+    '''
+    :param x: Pandas dataframe
+    :param target_lang: Target language to translate to
+    :return: Translated comments
+    :todo: Add target_lang to arg parser and remove hard-coding for comment field
+    '''
     translator = Translator()
     sentimenter = SentimentIntensityAnalyzer()
 
